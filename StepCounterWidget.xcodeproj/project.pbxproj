@@ -14,6 +14,12 @@
 		B9E935BA2C54C22C00242189 /* StepCounterWidgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E935B92C54C22C00242189 /* StepCounterWidgetTests.swift */; };
 		B9E935C42C54C22C00242189 /* StepCounterWidgetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E935C32C54C22C00242189 /* StepCounterWidgetUITests.swift */; };
 		B9E935C62C54C22C00242189 /* StepCounterWidgetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E935C52C54C22C00242189 /* StepCounterWidgetUITestsLaunchTests.swift */; };
+		B9E935DA2C54C53700242189 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E935D92C54C53700242189 /* WidgetKit.framework */; };
+		B9E935DC2C54C53700242189 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E935DB2C54C53700242189 /* SwiftUI.framework */; };
+		B9E935E32C54C53700242189 /* StepCounterWidgetLive.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E935E22C54C53700242189 /* StepCounterWidgetLive.swift */; };
+		B9E935E52C54C53700242189 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E935E42C54C53700242189 /* AppIntent.swift */; };
+		B9E935E72C54C53800242189 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9E935E62C54C53800242189 /* Assets.xcassets */; };
+		B9E935EB2C54C53800242189 /* StepCounterWidgetLiveExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B9E935D72C54C53700242189 /* StepCounterWidgetLiveExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +37,28 @@
 			remoteGlobalIDString = B9E935A32C54C22300242189;
 			remoteInfo = StepCounterWidget;
 		};
+		B9E935E92C54C53800242189 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9E9359C2C54C22300242189 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9E935D62C54C53700242189;
+			remoteInfo = StepCounterWidgetLiveExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B9E935EF2C54C53800242189 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B9E935EB2C54C53800242189 /* StepCounterWidgetLiveExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B9E935A42C54C22300242189 /* StepCounterWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepCounterWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +72,14 @@
 		B9E935BF2C54C22C00242189 /* StepCounterWidgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StepCounterWidgetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9E935C32C54C22C00242189 /* StepCounterWidgetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCounterWidgetUITests.swift; sourceTree = "<group>"; };
 		B9E935C52C54C22C00242189 /* StepCounterWidgetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCounterWidgetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B9E935D22C54C46000242189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B9E935D72C54C53700242189 /* StepCounterWidgetLiveExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StepCounterWidgetLiveExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9E935D92C54C53700242189 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		B9E935DB2C54C53700242189 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		B9E935E22C54C53700242189 /* StepCounterWidgetLive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCounterWidgetLive.swift; sourceTree = "<group>"; };
+		B9E935E42C54C53700242189 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		B9E935E62C54C53800242189 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B9E935E82C54C53800242189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +104,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B9E935D42C54C53700242189 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9E935DC2C54C53700242189 /* SwiftUI.framework in Frameworks */,
+				B9E935DA2C54C53700242189 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +122,8 @@
 				B9E935A62C54C22300242189 /* StepCounterWidget */,
 				B9E935B82C54C22C00242189 /* StepCounterWidgetTests */,
 				B9E935C22C54C22C00242189 /* StepCounterWidgetUITests */,
+				B9E935DD2C54C53700242189 /* StepCounterWidgetLive */,
+				B9E935D82C54C53700242189 /* Frameworks */,
 				B9E935A52C54C22300242189 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +134,7 @@
 				B9E935A42C54C22300242189 /* StepCounterWidget.app */,
 				B9E935B52C54C22C00242189 /* StepCounterWidgetTests.xctest */,
 				B9E935BF2C54C22C00242189 /* StepCounterWidgetUITests.xctest */,
+				B9E935D72C54C53700242189 /* StepCounterWidgetLiveExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +142,7 @@
 		B9E935A62C54C22300242189 /* StepCounterWidget */ = {
 			isa = PBXGroup;
 			children = (
+				B9E935D22C54C46000242189 /* Info.plist */,
 				B9E935A72C54C22300242189 /* StepCounterWidgetApp.swift */,
 				B9E935A92C54C22300242189 /* ContentView.swift */,
 				B9E935AB2C54C22C00242189 /* Assets.xcassets */,
@@ -129,6 +177,26 @@
 			path = StepCounterWidgetUITests;
 			sourceTree = "<group>";
 		};
+		B9E935D82C54C53700242189 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9E935D92C54C53700242189 /* WidgetKit.framework */,
+				B9E935DB2C54C53700242189 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9E935DD2C54C53700242189 /* StepCounterWidgetLive */ = {
+			isa = PBXGroup;
+			children = (
+				B9E935E22C54C53700242189 /* StepCounterWidgetLive.swift */,
+				B9E935E42C54C53700242189 /* AppIntent.swift */,
+				B9E935E62C54C53800242189 /* Assets.xcassets */,
+				B9E935E82C54C53800242189 /* Info.plist */,
+			);
+			path = StepCounterWidgetLive;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,10 +207,12 @@
 				B9E935A02C54C22300242189 /* Sources */,
 				B9E935A12C54C22300242189 /* Frameworks */,
 				B9E935A22C54C22300242189 /* Resources */,
+				B9E935EF2C54C53800242189 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B9E935EA2C54C53800242189 /* PBXTargetDependency */,
 			);
 			name = StepCounterWidget;
 			productName = StepCounterWidget;
@@ -185,6 +255,23 @@
 			productReference = B9E935BF2C54C22C00242189 /* StepCounterWidgetUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		B9E935D62C54C53700242189 /* StepCounterWidgetLiveExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9E935EC2C54C53800242189 /* Build configuration list for PBXNativeTarget "StepCounterWidgetLiveExtension" */;
+			buildPhases = (
+				B9E935D32C54C53700242189 /* Sources */,
+				B9E935D42C54C53700242189 /* Frameworks */,
+				B9E935D52C54C53700242189 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StepCounterWidgetLiveExtension;
+			productName = StepCounterWidgetLiveExtension;
+			productReference = B9E935D72C54C53700242189 /* StepCounterWidgetLiveExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -206,6 +293,9 @@
 						CreatedOnToolsVersion = 15.4;
 						TestTargetID = B9E935A32C54C22300242189;
 					};
+					B9E935D62C54C53700242189 = {
+						CreatedOnToolsVersion = 15.4;
+					};
 				};
 			};
 			buildConfigurationList = B9E9359F2C54C22300242189 /* Build configuration list for PBXProject "StepCounterWidget" */;
@@ -224,6 +314,7 @@
 				B9E935A32C54C22300242189 /* StepCounterWidget */,
 				B9E935B42C54C22C00242189 /* StepCounterWidgetTests */,
 				B9E935BE2C54C22C00242189 /* StepCounterWidgetUITests */,
+				B9E935D62C54C53700242189 /* StepCounterWidgetLiveExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +340,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9E935D52C54C53700242189 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9E935E72C54C53800242189 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +380,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B9E935D32C54C53700242189 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9E935E32C54C53700242189 /* StepCounterWidgetLive.swift in Sources */,
+				B9E935E52C54C53700242189 /* AppIntent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -293,6 +401,11 @@
 			isa = PBXTargetDependency;
 			target = B9E935A32C54C22300242189 /* StepCounterWidget */;
 			targetProxy = B9E935C02C54C22C00242189 /* PBXContainerItemProxy */;
+		};
+		B9E935EA2C54C53800242189 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9E935D62C54C53700242189 /* StepCounterWidgetLiveExtension */;
+			targetProxy = B9E935E92C54C53800242189 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -414,14 +527,17 @@
 		B9E935CA2C54C22C00242189 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = StepCounterWidget/StepCounterWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StepCounterWidget/Preview Content\"";
+				DEVELOPMENT_TEAM = A8G7V29YYP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StepCounterWidget/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -439,25 +555,29 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = signumneo.StepCounterWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		B9E935CB2C54C22C00242189 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = StepCounterWidget/StepCounterWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StepCounterWidget/Preview Content\"";
+				DEVELOPMENT_TEAM = A8G7V29YYP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StepCounterWidget/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -475,11 +595,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = signumneo.StepCounterWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -569,6 +690,65 @@
 			};
 			name = Release;
 		};
+		B9E935ED2C54C53800242189 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A8G7V29YYP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StepCounterWidgetLive/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StepCounterWidgetLive;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = signumneo.StepCounterWidget.StepCounterWidgetLive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B9E935EE2C54C53800242189 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A8G7V29YYP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StepCounterWidgetLive/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StepCounterWidgetLive;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = signumneo.StepCounterWidget.StepCounterWidgetLive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -604,6 +784,15 @@
 			buildConfigurations = (
 				B9E935D02C54C22C00242189 /* Debug */,
 				B9E935D12C54C22C00242189 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9E935EC2C54C53800242189 /* Build configuration list for PBXNativeTarget "StepCounterWidgetLiveExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9E935ED2C54C53800242189 /* Debug */,
+				B9E935EE2C54C53800242189 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
